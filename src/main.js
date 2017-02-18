@@ -3,9 +3,18 @@
 import Vue from 'vue';
 import App from './App';
 
+import router from './router';
+
+import Vuex from 'vuex';
+Vue.use(Vuex);
+
+import store from './store';
+
 /* eslint-disable no-new */
 new Vue({
     el: '#app',
+    router,
     template: '<App/>',
+    store,
     components: { App }
 });

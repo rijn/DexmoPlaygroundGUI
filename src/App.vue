@@ -1,9 +1,8 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
-    {{status.error}}
-  </div>
+    <div id="app">
+        <router-view></router-view>
+        {{status.error}}
+    </div>
 </template>
 
 <script>
